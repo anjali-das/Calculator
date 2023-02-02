@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+ <div class="container mt-5">
+ <div class="row">
+ <h1 class="text-center text-primary">Calculator</h1>
+ <div class="col-4"></div>
+ <div class="col-4">
+    <form class="border p-3 mt-3 border border-warning">
+        
+        <div class="" >
+            <input id="calculatorScreen"  type="text" placeholder="0" class="form-control border border-warning form "/>
+        
+        </div>
+        <div class="mt-2 text-center">
+            <input onclick="displayContent('(')"  value="(" type="button" class="btn btn-primary button"/>
+                <input onclick="displayContent(')')" value=")" type="button" class="btn btn-primary button"/>
+                <input onclick="allClear()"  value="AC" type="button" class="btn btn-primary button "/>
+                <input onclick="displayContent('÷')"  id="division"  value=" ÷" type="button" class="btn btn button"/> 
+            </div>
+
+            <div class="mt-1 text-center ">
+                <input onclick="displayContent(' 7')"  value="7" type="button" class="btn btn-primary button"/>
+                <input onclick="displayContent(' 8')"  value="8" type="button" class="btn btn-primary button"/>
+                <input onclick="displayContent(' 9')"  value=" 9" type="button" class="btn btn-primary button "/>
+                <input onclick="displayContent(' *')" id="division"  value="* " type="button" class="btn btn button"/> 
+                </div>
+
+                <div class="mt-1 text-center ">
+                    <input onclick="displayContent(' 4')"  value="4" type="button" class="btn btn-primary button"/>
+                    <input onclick="displayContent(' 5')"   value="5" type="button" class="btn btn-primary button"/>
+                    <input onclick="displayContent(' 6')"  value=" 6" type="button" class="btn btn-primary button"/>
+                    <input onclick="displayContent(' -')" id="division"  value="-" type="button" class="btn btn button"/> 
+                    </div>
+
+                    <div class="mt-1 text-center ">
+                        <input onclick="displayContent(' 1')" value="1" type="button" class="btn btn-primary button"/>
+                        <input onclick="displayContent(' 2')"  value="2" type="button" class="btn btn-primary button"/>
+                        <input onclick="displayContent(' 3')"  value=" 3" type="button" class="btn btn-primary button"/>
+                        <input onclick="displayContent(' +')" id="division"  value="+" type="button" class="btn btn button"/> 
+                        </div>
+
+                        <div class="mt-1 text-center ">
+                            <input value="0" type="button" class="btn btn-primary button"/>
+                            <input onclick="displayContent(' .')"  value="." type="button" class="btn btn-primary button"/>
+                            <input onclick=" displayContent(' exp')"  value=" exp" type="button" class="btn btn-primary button "/>
+                            <input onclick=" evaluateExprn() " id="division" value="=" type="button" class="btn btn button"/> 
+                            </div>
+
+                            <div class="mt-1 text-center ">
+                                
+                                <input onclick="removeLast()"  value="&#9003" type="button" class="btn btn-primary button"/>
+                                
+                                </div>
+
+
+
+            </form>
+  </div>
+    </div>
+     </div>
+       </body>
+
+<script src="./calc.js"></script>
+
+</html>
